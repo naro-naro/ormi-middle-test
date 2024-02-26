@@ -20,12 +20,14 @@ public class ExchangeExample {
 		
 		if (num == 1) {
 			System.out.println("환전할 금액을 원화로 입력해 주세요.");
+			System.out.print("원(KRW) = ");
 			int won1 = input.nextInt();
-			System.out.println("환전 결과 : " + df.format(wonIntoDollar.exchange(won1)) + "달러 입니다.");
+			System.out.println("달러($) = " + df.format(wonIntoDollar.exchange(won1)));
 		} else if (num == 2) {
 			System.out.println("환전할 금액을 원화로 입력해 주세요.");
+			System.out.print("원(KRW) = ");
 			int won2 = input.nextInt();
-			System.out.println("환전 결과 : " + df.format(wonIntoYen.exchange(won2)) + "엔 입니다.");
+			System.out.println("JPY = " + df.format(wonIntoYen.exchange(won2)));
 		} else {
 			System.out.println("올바른 환전 번호가 아닙니다.");
 		}
