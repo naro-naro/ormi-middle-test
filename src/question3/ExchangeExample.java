@@ -16,13 +16,13 @@ public class ExchangeExample {
 		
 		Scanner input = new Scanner(System.in);
 		System.out.println("원하시는 환전의 번호를 입력해주세요. (원->달러:1, 원->엔:2)");
-		int shape = input.nextInt();
+		int num = input.nextInt();
 		
-		if (shape == 1) {
+		if (num == 1) {
 			System.out.println("환전할 금액을 원화로 입력해 주세요.");
 			int won1 = input.nextInt();
 			System.out.println("환전 결과 : " + df.format(wonIntoDollar.exchange(won1)) + "달러 입니다.");
-		} else if (shape == 2) {
+		} else if (num == 2) {
 			System.out.println("환전할 금액을 원화로 입력해 주세요.");
 			int won2 = input.nextInt();
 			System.out.println("환전 결과 : " + df.format(wonIntoYen.exchange(won2)) + "엔 입니다.");
