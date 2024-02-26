@@ -3,10 +3,6 @@ package question3;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-import question1.Circle;
-import question1.Rectangle;
-import question1.Triangle;
-
 public class ExchangeExample {
 	public static void main(String[] args) {
 		WonIntoDollar wonIntoDollar = new WonIntoDollar();
